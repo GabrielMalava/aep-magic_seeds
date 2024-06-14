@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesLogin.css">
+    <title>MAGIC SEEDS</title>
+
+
+    <script>
+        function validarLogin(event) {
+            event.preventDefault(); 
+
+            const numeroAcesso = document.getElementById('numeroAcesso').value;
+            const senha = document.getElementById('senha').value;
+
+            const regex = /^[0-3]{4}$/;
+
+            if (!regex.test(numeroAcesso)) {
+                alert('O Número de Acesso ou a Senha deve conter exatamente 4 caracteres, e apenas os dígitos 0, 1, 2 e 3.');
+                return false;
+            }
+
+            if (!regex.test(senha)) {
+                alert('O Número de Acesso ou a Senha deve conter exatamente 4 caracteres, e apenas os dígitos 0, 1, 2 e 3.');
+                return false;
+            }
+
+
+            alert('Login válido! Submetendo formulário...');
+            document.getElementById('loginForm').submit();
+        }
+    </script>
+
+
+
+</head>
+<body>
+
+
+    
+    <header id="Topo">
+       
+        <nav>
+            <ul>
+                <a href="index.html"><li><button class="button_login">Voltar</button></li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="margin-top: 0px;">
+            <h2>Qual é o nosso objetivo?</h2>
+            <ul>
+                <li>Melhorar a forma de Tratar a agronomia com a tecnologia.</li>
+                <li>Ajudar pessoas que tem interesse em utilizar esse a agronomia ao nosso favor.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Qual é o sentido desse projeto?</h2>
+            <br>
+            <p>Algumas pessoas não tem espaço fisico em suas casas, não tem "Sol" suficiente, a angulação das placas não seria favorável dentre outros motivos.</p>
+            <br>
+            <p>Além disso, utilizar fontes sustentáveis para gerar energia é uma otima forma de ajudar o meio ambiente.</p>
+            <br>
+            <p>A nossa fonte de renda seria por meio de pequenas taxas para gerenciar tudo e o execesso de energia seria vendido.</p>
+        </section>
+
+        <section>
+            <h2>Quais são os benefícios e diferenciais?</h2>
+            <ul>
+                <li>Cuidamos de toda a gestão operacional para você.</li>
+                <li>Você decide o investimento conforme suas necessidades. <i>(O rendimento será proporcional ao investimento)</i></li>
+                <li>As placas fotovoltaicas serão instaladas em nossa estação solar, não na sua propriedade.</li>
+                <li>Garantimos manutenção e limpeza diária das placas na usina solar para otimizar o rendimento.</li>
+                <li>Você pode monitorar o desempenho em tempo real através de nosso portal online.</li>
+            </ul>
+        </section>
+        
+
+
+        <div id="Login">
+           <form id="loginForm">
+             <h3>LOGIN</h3>
+             <br>
+             <label class="login_label" for="numeroAcesso">Digite seu Número de Acesso:</label>
+             <br>
+             <input type="text" class="login_input" id="numeroAcesso" maxlength="4" placeholder="0000">
+             <br>
+             <br>
+             <label class="login_label" for="senha">Digite sua Senha:</label>
+             <br>
+             <input type="password" class="login_input" name="" id="senha" maxlength="4" placeholder="0000">
+             <br>
+             <br>
+             <input type="button" onclick="validarLogin(event)" value="Enviar" class="button_enviar">
+           </form>
+           <p class="registrar">Não possui um Número de Acesso ainda? Clique aqui ➔ <a href="">Registrar</a>  😉</p>
+        </div>
+    </main>
+
+
+
+    <footer>
+       <p>alunosDPprojetaco@gmail.com</p>
+       <a href="#Topo"><p class="voltar_topo">Voltar ao Topo</p></a>
+       <p>(44) 99999-9999</p>
+    </footer>
+
+    
+    
+</body>
+</html>

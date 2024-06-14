@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(https://revistacampoenegocios.com.br/wp-content/uploads/2021/10/Tecnologia-1-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #f5f5f5;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    background-color: rgba(75, 75, 75, 0.8);
+    font-weight: bold;
+    border: #505750 solid 5px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    text-shadow: #868686;
+}
+
+nav ul {
+    padding: 15px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.button_login {
+    padding: 15px;
+    background-color: #32CD32;
+    font-weight: bold;
+    margin: 20px;
+    color: white;
+    border-radius: 8px;
+    font-size: medium;
+    border: 2px solid #505750;
+    width: 80px;
+    text-align: center;
+    transition: background-color 400ms, transform 400ms;
+}
+
+.button_login:hover {
+    transform: scale(1.2);
+    background-color: #228B22;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    background-color: white;
+    border: #868686 solid 4px;
+    border-bottom: #505750 solid 10px;
+    border-right: #8dac8d solid 15px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+}
+
+#Login {
+    background-color: white;
+    border: #505750 solid 4px;
+    border-bottom: #505750 solid 10px;
+    border-right: #8dac8d solid 15px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+div h3 {
+    font-size: 50px;
+}
+
+form {
+    background-color: rgb(255, 242, 226);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.login {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input.button_enviar {
+    padding: 10px;
+    background-color: #32CD32;
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: medium;
+    width: 100px;
+    border: 2px solid #228B22;
+    text-align: center;
+    transition: background-color 400ms, transform 400ms;
+}
+
+input.button_enviar:hover {
+    transform: scale(1.1);
+    background-color: #228B22;
+}
+
+.login_label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: #505750 solid 2px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.registrar {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #505750;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin-right: 50px;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    max-width: 150px;
+}
+
+footer p:hover {
+    color: #ADFF2F;
+    transition: 400ms;
+}
+
+.voltar_topo:hover {
+    color: #32CD32;
+    transition: 400ms;
+    transform: scale(1.1);
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section ul {
+    padding: 15px;
+    list-style: "🌱";
+}
+
+section p, ul {
+    font-size: 18px;
+}
